@@ -34,5 +34,6 @@ public class Switch {
                 System.out.println("Invalid day");
                 break;
         }
+        sc.close();
     }
 }
