@@ -1,0 +1,38 @@
+Bus Conductor – Money Collection and Ticket Issuing
+
+Create a simple Java program to demonstrate how objects are passed as arguments to methods and how a method can return an object.
+
+The program represents a basic interaction between a Passenger, Conductor, Money, and Ticket.
+
+Create the following classes:
+
+Conductor
+Create a method collect(Money m) that accepts a Money object.
+When money is collected, print:
+"Money collected by conductor"
+Create another method give() that creates a new Ticket object, prints:
+"Ticket issued", and returns the ticket.
+Money
+Create an empty class representing the money given by the passenger.
+Ticket
+Create an empty class representing the ticket issued by the conductor.
+Passenger
+Create the main() method.
+Create a Conductor object.
+Create a Money object.
+Pass the Money object to the conductor's collect() method.
+Call the conductor's give() method and store the returned Ticket object in a Ticket reference.
+If the returned ticket is not null, print:
+"Ticket collected"
+Expected Flow
+Passenger
+    ↓
+Creates Money
+    ↓
+Gives Money to Conductor
+    ↓
+Conductor collects Money
+    ↓
+Conductor issues Ticket
+    ↓
+Passenger receives Ticket
