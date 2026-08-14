@@ -12,6 +12,7 @@ public class ConstructorsAndOverloading {
 
     public static void main(String[] args) {
         Robot r = new Robot();
+        // new Robot(); it can be used when no variable is needed like r .
     }
 
 }
