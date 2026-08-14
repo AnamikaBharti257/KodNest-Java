@@ -28,16 +28,19 @@ class FoodOrder {
 public class Main {
 
     public static void main(String[] args) {
-        try (Scanner scanner = new Scanner(System.in)) {
-            String item = scanner.nextLine();
-            int quantity = scanner.nextInt();
+        Scanner scanner = new Scanner(System.in);
 
-            FoodOrder f = new FoodOrder(item);
-            FoodOrder f2 = new FoodOrder(item, quantity);
+        String item = scanner.nextLine();
+        int quantity = scanner.nextInt();
 
-            f.display();
-            f2.display();
-        }
+        FoodOrder f = new FoodOrder(item);
+
+        FoodOrder f2 = new FoodOrder(item, quantity);
+
+        f.display();
+        f2.display();
+
+        scanner.close();
     }
 
 }
